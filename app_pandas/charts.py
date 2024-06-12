@@ -1,7 +1,7 @@
 #para instalar matplotlib en vs usa el comando  "pip install matplotlib", si aparece un error usar "sudo apt-get install python3-tk"
 import matplotlib.pyplot as plt
 
-def generate_bar_chart(name, labels, values):
+def generate_bar_chart(name,labels, values):
   fig, ax = plt.subplots()
   ax.bar(labels, values)
   plt.savefig(f'./imgs/{name}bar.png')
