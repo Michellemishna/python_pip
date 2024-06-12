@@ -3,4 +3,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-      
+      # volumes sirve para actualizar en tiempo real todos los cambios que hagamos
+    volumes:
+    - .:/app
+    
